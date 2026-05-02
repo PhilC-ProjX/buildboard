@@ -49,10 +49,22 @@ export const styles = {
         inputField:
             "w-full rounded-lg border border-slate-300 outline-none text-slate-700 px-4 py-2 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500",
         grid: "grid grid-cols-1 md:grid-cols-2 gap-6",
+        error: "rounded-lg border border-red-200 bg-red-50 px-4 py-3 text-red-700"
     },
 
     badge: {
-        status:
-            "rounded-full bg-emerald-100 px-3 py-1 text-xs font-medium text-emerald-700 capitalize",
+        base:
+            "rounded-full px-3 py-1 text-xs font-medium capitalize",
+        status: {
+            planned: "bg-blue-100 text-blue-700",
+            "in progress": "bg-amber-100 text-amber-700",
+            completed: "bg-emerald-100 text-emerald-700",
+            paused: "bg-slate-100 text-slate-700",
+        },
+        priority: {
+            high: "bg-red-100 text-red-700",
+            medium: "bg-amber-100 text-amber-700",
+            low: "bg-blue-100 text-blue-700",
+        },
     },
 };
